@@ -1,0 +1,49 @@
+<!Doctype html>
+<html>
+	<head><title>Form</title>
+		<style>
+			body{	
+				background: rgb(43,39,117);
+				background: linear-gradient(90deg, rgba(43,39,117,1) 0%, rgba(186,101,195,1) 46%, rgba(83,52,149,1) 100%);}
+			div{	
+				margin:80px 550px;
+				background-color:#EDEADE;
+				border-radius:10px;
+				width:390px;
+				height:500px;
+				text-align:center;}
+			form{	padding:50px;
+				font-family: Arial, Helvetica, sans-serif;}
+			a,input{width:280px;
+				height:30px;
+				border:none;
+				border-radius:5px;}
+			#b{	background-color:#0096FF;
+				color:white;
+				width:290px;}
+			a{	color:#0096FF;}
+			
+		</style>
+		<script>
+		function login(f)
+		{if(f.mail.value=="Avinash@gmail.com")
+		{if(f.pass.value=="123456789")
+		alert("you are logged in")
+		else
+		alert("wrong password")}
+		else
+		alert("erong username or email")}
+		</script>
+	</head>
+	<body>
+		<div>
+			<form action="abc" method="get">
+				<h1>Sign in</h1>
+				<input type="email" placeholder="Email" name="mail"><br><br>
+				<input type="password" placeholder="Password" name="pass"><br><br>
+				<input id="b" type="submit" onclick="login(form)" value="Log in" name="but"><br><br><br>
+				<a href="forgotpassword.html" target="_blank">Forgot password?</a> 
+			</form>
+		</div>
+	</body>
+</html>
